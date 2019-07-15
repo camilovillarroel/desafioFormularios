@@ -1,0 +1,24 @@
+<h1> "El registro fue almacenado con éxito!" </h1>
+<br>
+
+
+<table class= 'table'>
+<tr>
+    <td><strong>Detalle</strong>  </td>
+    <td><strong>Categoria</strong>  </td>
+    <td><strong>Monto</strong>  </td>
+    <td><strong>Descuento</strong>  </td>
+</tr>
+
+<tr>
+    <td><%= @last_sale.detail %></td>
+    <td><%= @last_sale.category %></td>
+    <td><%= @last_sale.value %></td>
+    <td><%= @last_sale.discount %></td>
+</tr>
+</table>
+
+
+<button type="button" class="btn btn-primary btn-light"><%= link_to 'Volver', new_sale_path %></button>
+
+
